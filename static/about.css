@@ -1,0 +1,179 @@
+/* Apply general styling to the entire page */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 12px 12px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.no:hover {
+    background-color: #95B4FD;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.special {
+    position: absolute;
+    right: 10px;
+}
+
+.special:hover {
+    background-color: rgb(150, 69, 226);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(1.05);
+}
+
+li {
+    padding: 3px 17px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Style the About Us section */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Style the Subscribe section */
+.subscribe-section {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.subscribe-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.subscribe-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 20%; /* Make the input full width */
+    margin-bottom: 10px; /* Add some spacing */
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        padding: 8px 8px; /* Adjust padding for smaller screens */
+    }
+
+    ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+    .no:hover{
+        width: 35%;
+    }
+    .special:hover{
+        width: 50%;
+    }
+    .special {
+        position: static; /* Remove absolute positioning */
+        margin-top: 10px; /* Add some spacing */
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+    .about-section {
+        padding: 20px 0;
+    }
+    .subscribe-form input[type="email"]{
+        width: 100%;
+    }
+    .subscribe-form {
+        align-items: flex-start;
+    }
+}

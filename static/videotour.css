@@ -1,0 +1,175 @@
+/* Apply general styling to the entire page */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 12px 12px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.no:hover {
+    background-color: #95B4FD;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.special {
+    display: flex;
+    right: 10px;
+}
+
+.special:hover {
+    background-color: rgb(150, 69, 226);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(1.05);
+}
+
+li {
+    list-style: none;
+    padding: 3px 17px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main container */
+.head-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* h1 tag */
+h1 {
+    font-size: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: brown;
+}
+
+/* Container 1 and Container 2 */
+.container1,
+.container2 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.container1 h3,
+.container2 h3 {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.container1 p,
+.container2 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    padding: 10px;
+}
+
+/* Main video container */
+.main-video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.main-video-container p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Video Containers Width and Height */
+.video-container1 video,
+.video-container2 video,
+.video-container3 video,
+.video-container4 video,
+.video-container5 video {
+    width: 100%; /* Make videos fill the container width */
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav{
+        padding: 10px;
+        flex-direction: column;
+        z-index: 1;
+    }
+    ul{
+        /* text-align: center; */
+        flex-direction: column;
+    }
+    .no:hover{
+        width: 35%;
+    }
+    .special:hover{
+        width: 50%;
+    }
+    .special{
+        /* text-align: center; */
+        /* flex-wrap: wrap !important ; */
+        flex-direction: column;
+    }
+    /* Adjust container margins */
+    .container1,
+    .container2 {
+        margin-top: 15px;
+    }
+
+    /* Center-align h1 and reduce font size */
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Reduce padding in containers */
+    .container1 p,
+    .container2 p {
+        padding: 5px;
+    }
+}

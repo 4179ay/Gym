@@ -1,0 +1,157 @@
+/* Reset some default styles for consistency */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and set text color */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 12px 12px;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.no:hover {
+    background-color: #95B4FD;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.special {
+    display: flex;
+    right: 10px;
+}
+
+.special:hover {
+    background-color: rgb(150, 69, 226);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(1.05);
+}
+
+li {
+    list-style: none;
+    padding: 3px 17px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Style the About website section */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.myimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.myimg:hover{
+    cursor: pointer;
+    transform:scale(3.05);
+    
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.emoji {
+    position: absolute;
+    left: 52vw; /* Use vw units for responsive positioning */
+    font-size: 20px;
+}
+
+.emoji:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav{
+        padding: 10px;
+        flex-direction: column;
+    }
+    ul{
+        /* text-align: center; */
+        flex-direction: column;
+    }
+    .no:hover{
+        width: 35%;
+    }
+    .special:hover{
+        width: 50%;
+    }
+    .special{
+        /* text-align: center; */
+        /* flex-wrap: wrap !important ; */
+        flex-direction: column;
+    }
+
+    /* Adjust font size for smaller screens */
+    .about-section h1 {
+        font-size: 24px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+
+    .emoji {
+        left: 50vw;
+        font-size: 16px;
+    }
+}

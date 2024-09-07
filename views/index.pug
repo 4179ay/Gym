@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Haven</title>
+    <link rel="website icon" type="jpg" href="../static/images/main.jpg">
+    <link rel="stylesheet" href="../static/style.css">
+    link(rel="stylesheet" href="../static/popup.css")
+</head>
+
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h1>श्री गणेशाय नम:<span>&#128591;<span></h1>
+            <h2>नमस्कार मैं इस वेबसाइट पर आपका स्वागत करता हूँ</h2>
+            <p>This is a gym website which is in the 'beta-production' so some features are not working properly so please fill up the forms so that I can know that the databases are working or not and if you get any type of problem let me know and also for better view you can open this website in laptop/pc| ok enjoy<span>&#128525;<span></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <nav class='nav'>
+        <ul class='v-class nav-list'>
+            <li class="no"><a href='/'>Home</a></li>
+            <li class="no"><a href='/about'>About</a></li>
+            <li class="no"><a href='contact'>Contact Us</a></li>
+            <li class="no"><a href='/services'>Services</a></li>
+            <li class="no"><a href='/signup'>Sign up</a></li>
+            <li class="no"><a href='/videotour'>Video tour</a></li>
+            <li class="no"><a href='/shop'>Shop</a></li>
+            <li class="special"><a href='/aboutwebsite'>About This Website</a></li>
+        </ul>
+         <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    </nav>
+
+    <div class="container">
+
+        <h1 class="text">Fitness Haven|Get Membership for Only &#8377;449</h1>
+        <!-- <p>
+            | #{content} //- This is a plain html using Pug
+        </p> -->
+
+        <form action="/" method="post" id="contact">
+            <input type="text" name="name" id="name" placeholder="Enter your name" class="input" required>
+            <input type="date" name="age" id="age" placeholder="DOB" class="input" required>
+            <input type="gender" name="gender" id="gender" placeholder="Enter your gender" class="input" required>
+            <input type="text" name="address" id="address" placeholder="Enter your address" class="input" required>
+            <input type="email" name="email" id="email" placeholder="Enter your email" class="input" required>
+            <input type="number" name="number" id="number" placeholder="Enter your phone number" class="input" required>
+            <button class="btn" required>Submit</button>
+        </form>
+    </div>
+    script(src="../static/js/popup.js")
+    script(src="../static/js/responsive.js")
+</body>
+
+</html>

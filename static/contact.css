@@ -1,0 +1,202 @@
+/* Apply general styling to the entire page */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset default margin and padding */
+body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set text color */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 12px 12px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.no:hover {
+    background-color: #95B4FD;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.special {
+    display: flex;
+    right: 10px;
+}
+
+.special:hover {
+    background-color: rgb(150, 69, 226);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(1.05);
+}
+
+li {
+    list-style: none;
+    padding: 3px 17px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Style contact section */
+.contact {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Style contact info */
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Style address and contact details */
+.address, .contact-details {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style operating hours */
+.opening-hours {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style links */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style contact section */
+.contact {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Style form */
+.contact-form form {
+    display: grid;
+    gap: 10px;
+}
+
+/* Style form labels */
+.contact-form label {
+    font-weight: bold;
+}
+
+/* Style form inputs and textarea */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style submit button */
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav{
+        padding: 10px;
+        flex-direction: column;
+    }
+    ul{
+        /* text-align: center; */
+        flex-direction: column;
+    }
+    .no:hover{
+        width: 35%;
+    }
+    .special:hover{
+        width: 50%;
+    }
+    .special{
+        /* text-align: center; */
+        /* flex-wrap: wrap !important ; */
+        flex-direction: column;
+    }
+}
